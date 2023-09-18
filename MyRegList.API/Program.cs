@@ -1,8 +1,11 @@
+using MyRegList.Data.Model;
 using MyRegList.Data.Models;
 using MyRegList.Logic.Classes;
 using MyRegList.Logic.Interfaces;
 using MyRegList.Repository.Classes;
 using MyRegList.Repository.Interfaces;
+
+using MyRegList.Data.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<MyDbContext>();
+builder.Services.AddTransient<ItemDBContext>();
 builder.Services.AddTransient<IRepository<Item>, ItemRepository>();
 
 builder.Services.AddTransient<IItemLogic, ItemLogic>();

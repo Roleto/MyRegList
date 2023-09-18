@@ -1,4 +1,4 @@
-﻿using MyRegList.Data.Models;
+﻿using MyRegList.Data.Model;
 
 namespace MyRegList.Logic.Interfaces
 {

@@ -1,13 +1,14 @@
-﻿using MyRegList.Data.Models;
+﻿using MyRegList.Data.Data;
+using MyRegList.Data.Models;
 using MyRegList.Repository.Interfaces;
 
 namespace MyRegList.Repository.Classes
 {
     public abstract class Repository<T> : IRepository<T> where T : class
     {
-        protected MyDbContext ctx;
+        protected ItemDBContext ctx;
 
-        protected Repository(MyDbContext ctx)
+        protected Repository(ItemDBContext ctx)
         {
             this.ctx = ctx;
         }

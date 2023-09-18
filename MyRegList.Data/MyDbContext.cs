@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using MyRegList.Data.Model;
 
 namespace MyRegList.Data.Models;
 

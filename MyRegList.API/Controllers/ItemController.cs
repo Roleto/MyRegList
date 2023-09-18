@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyRegList.Data.Models;
+using MyRegList.Data.Model;
 using MyRegList.Logic.Interfaces;
 
 namespace Api.Controllers
