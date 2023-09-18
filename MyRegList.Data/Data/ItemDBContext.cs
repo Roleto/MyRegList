@@ -39,22 +39,16 @@ namespace MyRegList.Data.Data
             {
                 new Item() {Id=1,Name="Valami1", Description="Desc1", ImageUrl=null, Type="Valami"},
                 new Item() {Id=2,Name="Valami2", Description="Desc2", ImageUrl=null, Type="Valami"},
-                new Item() {Id=3,Name="Valami3", Description="Desc3", ImageUrl=null, Type="Valami1"},
-                new Item() {Id=4,Name="Valami4", Description="Desc4", ImageUrl=null, Type="Valami1"},
+                new Item() {Id=3,Name="Valami3", Description="Desc3", ImageUrl=null, Type="Valami"},
+                new Item() {Id=4,Name="Valami4", Description="Desc4", ImageUrl=null, Type="Valami"},
                 new Item() {Id=5,Name="Valami5", Description="Desc5", ImageUrl=null, Type="Valami2"},
                 new Item() {Id=6,Name="Valami6", Description="Desc6", ImageUrl=null, Type="Valami2"},
-                new Item() {Id=7,Name="Valami7", Description="Desc7", ImageUrl=null, Type="Valami2"}
-                //new Item("2#Valami2#Desc2##Valmi"),
-                //new Item("3#Valami3#Desc3##Valmi"),
-                //new Item("4#Valami4#Desc4##Valmi1"),
-                //new Item("5#Valami5#Desc5##Valmi1"),
-                //new Item("6#Valami6#Desc6##Valmi2"),
-                //new Item("7#Valami7#Desc7##Valmi2"),
-                //new Item("8#Valami8#Desc8##Valmi2"),
-                //new Item("9#Valami9#Desc9##Valmi2"),
-                //new Item("10#Valami10#Desc10##Valmi3"),
-                //new Item("11#Valami11#Desc11##Valmi3"),
-                //new Item("12#Valami12#Desc12##Valmi3")
+                new Item() {Id=7,Name="Valami7", Description="Desc7", ImageUrl=null, Type="Valami3"},
+                new Item() {Id=8,Name="Valami8", Description="Desc8", ImageUrl=null, Type="Valami3"},
+                new Item() {Id=9,Name="Valami9", Description="Desc9", ImageUrl=null, Type="Valami3"},
+                new Item() {Id=10,Name="Valami10", Description="Desc10", ImageUrl=null, Type="Valami3"},
+                new Item() {Id=11,Name="Valami11", Description="Desc11", ImageUrl=null, Type="Valami4"},
+                new Item() {Id=12,Name="Valami11", Description="Desc12", ImageUrl=null, Type="Valami4"}
             });
         }
         }

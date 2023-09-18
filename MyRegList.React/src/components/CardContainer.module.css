@@ -1,0 +1,26 @@
+
+.col{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar{
+    border-radius: 10px;
+}
+
+.serchBar{
+    width: 40%;
+}
+.cardContainer{
+    margin-top: 10px;
+    
+}
+.headerRow{
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,45 @@
+
+.col{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar{
+    border-radius: 10px;
+}
+
+.serchBar{
+    width: 40%;
+}
+.cardContainer{
+    margin-top: 10px;
+    
+}
+.headerRow{
+    margin-bottom: 10px;
+}
+
+.indicator {
+    position: absolute;
+    right: 0;
+    width: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    color: hsl(var(--bkg));
+    border-radius: 100vmax;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    padding: var(--space-sm);
+    transform: translate(40%,-40%);
+}
+
+.filled{
+    background-color: blue;
+}
