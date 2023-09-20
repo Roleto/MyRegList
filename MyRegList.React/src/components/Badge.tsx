@@ -1,10 +1,12 @@
-import { BadgeInterface } from "../types"
-import styles from './Badge.module.css'
+import { IBadge } from "../types";
+import styles from "./Badge.module.css";
 
-const Badge = (props : BadgeInterface) => {
-    const filledClass = props.filled ? styles.filled : "";
+const Badge = (props: IBadge) => {
+  const filledClass = props.filled ? styles.filled : "";
   return (
-    <small className={`${styles.badge} ${filledClass}`} >{props.text}</small>
-  )
-}
-export default Badge
+    <small className={`${styles.badge} ${filledClass}`}>
+      {props.text ? props.text : ""}
+    </small>
+  );
+};
+export default Badge;

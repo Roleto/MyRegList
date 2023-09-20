@@ -5,7 +5,7 @@ import CardContainer from "./components/CardContainer";
 import { IItem } from "./types";
 import { Col, Container, Row, Spinner } from "react-bootstrap";
 import Header from "./components/Header";
-import styles from "./App.module.css";
+import ApiService from "./components/ApiService";
 
 function App() {
   // const [data, setData] = useState([]);
@@ -14,24 +14,11 @@ function App() {
   });
   useEffect(() => {
     const api = async () => {
-      const data = await fetch("http://localhost:5244/api/Item/GetAll", {
-        method: "GET",
-      });
-      const jsonData: IItem[] = await data.json();
-      console.log(jsonData);
-      setState({ data: jsonData });
+      const data = await ApiService.GetAll();
+      setState({ data: data });
     };
-
     api();
   }, []);
-
-  if (state.data == null || !(state.data.length > 0)) {
-    return (
-      <Spinner animation="border" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </Spinner>
-    );
-  }
 
   return (
     <div className="bg-dark">
@@ -40,14 +27,21 @@ function App() {
           <Header />
         </Row>
         <Row>
-          <Col className={styles.col1} md="2"></Col>
+          <Col md="2"></Col>
           <Col md="8">
+            { state.data == null || !(state.data.length > 0) &&
+             <Spinner variant="primary" animation="border" role="status">
+             <span className="visually-hidden">Loading...</span>
+           </Spinner>
+            }
+            {state.data !=null && state.data.length > 0 &&
             <CardContainer items={state.data} />
+            }
           </Col>
-          <Col className={styles.col1} md="2"></Col>
+          <Col  md="2"></Col>
         </Row>
         <Row></Row>
-      </Container>
+      </Container> 
     </div>
   );
 }
